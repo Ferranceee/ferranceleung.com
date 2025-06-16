@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferrance</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+  <img src="images/logo.PNG" alt="log" />
+</div>
+      <nav>
+        <h2>Ferrance</h2>
+        <div class="section">
+  <input type="checkbox" id="art-toggle" />
+  <label for="art-toggle" class="dropdown-label">art ▿</label>
+  <ul class="dropdown-menu">
+    <li>2025</li>
+    <li>2024</li>
+    <li>2023</li>
+  </ul>
+</div>
+        <div class="section">
+          <a href="#">about me</a>
+        </div>
+        <div class="section">
+          <a href="#">contact</a>
+        </div>
+      </nav>
+    </aside>
+    <main class="content">
+      <div class="art-display">
+  <img src="images/coverart1.jpg" alt="Art image" class="art-image fade-in" id="artImage" />
+</div>
+    </main>
+  </div>
+  <script>
+  const img = document.getElementById('artImage');
+
+  img.addEventListener('load', () => {
+    img.classList.add('visible');
+  });
+</script>
+</body>
+</html>
